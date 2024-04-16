@@ -146,7 +146,7 @@ return (
                 {/*  */}
                  <div>
                       <div className="logo_img">
-                        <img src="https://static.99acres.com/universalapp/img/nnacres_white.png" alt="..."/>
+                        <h1>99acres</h1>
                       </div>
                       
                  </div>
