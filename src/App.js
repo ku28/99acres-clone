@@ -50,7 +50,7 @@ import ResidentialCheckBox from './components/Residential_dropdown';
            .get(serverUrl + "cities")
            .then((res) => setCities(res.data))
            .catch((error) =>
-             alert("Something went wrong while trying to fetch cities! " + error)
+             console.log("Something went wrong while trying to fetch cities! " + error)
            );
         
        };
@@ -59,7 +59,7 @@ import ResidentialCheckBox from './components/Residential_dropdown';
            .get(serverUrl + "properties")
            .then((res) => setProperties(res.data))
            .catch((error) =>
-             alert("Something went wrong while trying to fetch properties! " + error)
+             console.log("Something went wrong while trying to fetch properties! " + error)
            );
        };
      
@@ -78,10 +78,9 @@ import ResidentialCheckBox from './components/Residential_dropdown';
             
             })
            .catch((error) =>
-             alert("Something went wrong while submitting your request! " + error)
+             console.log("Something went wrong while submitting your request! " + error)
            );
          removePopup();
-       
        };
      
        const handleNewPropertyForm = (event) => {
@@ -94,7 +93,7 @@ import ResidentialCheckBox from './components/Residential_dropdown';
              getProperties();
           })
            .catch((error) =>
-             alert(
+             console.log(
                "Something went wrong while submitting your property details! " +
                  error
              )
